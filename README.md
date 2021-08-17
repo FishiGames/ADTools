@@ -15,6 +15,25 @@
     <br />
   </p>
 
+<!-- INTEGRATION -->
+## Maven integration
+```xml
+<repositories>
+    <repository>
+        <id>unrealshards-repo</id>
+        <url>https://unrealshards.com/repositories</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>at.fischer</groupId>
+        <artifactId>adtools</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <scope>compile</scope>
+    </dependency>
+</dependencies>
+```
 
 <!-- USAGE EXAMPLES -->
 ## API-Activation
