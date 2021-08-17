@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/FishiGames/ADTools">
-    <img src="https://static.teamviewer.com/resources/2018/04/activeDirectory-1.png" alt="Logo">
+    <img src="https://cdn.worldvectorlogo.com/logos/active-directory-1.svg" alt="Logo">
   </a>
 
 <h3 align="center">Java ActiveDirectory Tools</h3>
