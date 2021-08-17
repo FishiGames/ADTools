@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/FishiGames/ADTools">
-    <img src="https://static.teamviewer.com/resources/2018/04/activeDirectory-1.png" alt="Logo">
+    <img src="https://cdn.worldvectorlogo.com/logos/active-directory-1.svg" alt="Logo">
   </a>
 
 <h3 align="center">Java ActiveDirectory Tools</h3>
@@ -15,6 +15,25 @@
     <br />
   </p>
 
+<!-- INTEGRATION -->
+## Maven integration
+```xml
+<repositories>
+    <repository>
+        <id>unrealshards-repo</id>
+        <url>https://unrealshards.com/repositories</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>at.fischer</groupId>
+        <artifactId>adtools</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <scope>compile</scope>
+    </dependency>
+</dependencies>
+```
 
 <!-- USAGE EXAMPLES -->
 ## API-Activation
@@ -24,7 +43,7 @@ ADTools.activate("DomainController-01", "AD.UnrealShards.com", "FishiGames", "P4
 ```
 
 
-## User example: 
+## User example:
 ```java
 ADUser adUser = ADTools.getADUserHandler().findADUser("fishigames");
 adUser.getGroups().forEach(System.out::println);
@@ -67,5 +86,9 @@ This API is unofficial, and we are in no way affiliated with the Microsoft Corpo
 ## Contact
 
 Twitter - [@FishiGames](https://twitter.com/FishiGames)
+\
+YouTube - [@FishiGames](https://www.youtube.com/channel/UC1DY8vlCtV-5fm41qsO19Qw)
+\
+Twitch - [@FishiGamesXD](https://twitch.tv/FishiGamesXD)
 \
 Project Link: [https://github.com/FishiGames/ADTools](https://github.com/FishiGames/ADTools)
