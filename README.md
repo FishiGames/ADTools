@@ -24,7 +24,7 @@ ADTools.activate("DomainController-01", "AD.UnrealShards.com", "FishiGames", "P4
 ```
 
 
-## User example: 
+## User example:
 ```java
 ADUser adUser = ADTools.getADUserHandler().findADUser("fishigames");
 adUser.getGroups().forEach(System.out::println);
@@ -67,5 +67,9 @@ This API is unofficial, and we are in no way affiliated with the Microsoft Corpo
 ## Contact
 
 Twitter - [@FishiGames](https://twitter.com/FishiGames)
+\
+YouTube - [@FishiGames](https://www.youtube.com/channel/UC1DY8vlCtV-5fm41qsO19Qw)
+\
+Twitch - [@FishiGamesXD](https://twitch.tv/FishiGamesXD)
 \
 Project Link: [https://github.com/FishiGames/ADTools](https://github.com/FishiGames/ADTools)

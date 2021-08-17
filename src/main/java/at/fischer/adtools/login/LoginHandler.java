@@ -17,12 +17,12 @@ import java.util.Hashtable;
 public class LoginHandler {
     private DirContext dirContext;
 
-    private final String domainController;
+    private final String server;
     private final String domainName;
     private final String username;
 
-    public LoginHandler(String domainController, String domainName, String username, String password) {
-        this.domainController = domainController;
+    public LoginHandler(final String server, final String domainName, final String username, final String password) {
+        this.server = server;
         this.domainName = domainName;
         this.username = username;
 
@@ -34,7 +34,7 @@ public class LoginHandler {
             hashtable.put(Context.SECURITY_CREDENTIALS, password);
 
             this.dirContext = LdapCtxFactory
-                    .getLdapCtxInstance("ldap://" + domainController + "." + domainName + '/', hashtable);
+                    .getLdapCtxInstance("ldap://" + server + "." + domainName + '/', hashtable);
         } catch (final AuthenticationException authenticationException) {
             System.out.println("Authentication failed: " + authenticationException);
             System.exit(1);
